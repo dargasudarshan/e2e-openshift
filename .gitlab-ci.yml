@@ -41,17 +41,17 @@ HC5P-CSTOR-POOL:
   dependencies:
     - K9YC-OpenEBS
      
-9AKX-Create-Snapshot:
-  extends: .func_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/9AKX-snapshot/snapshot
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/9AKX-snapshot/snapshot
+# 9AKX-Create-Snapshot:
+#   extends: .func_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/9AKX-snapshot/snapshot
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/9AKX-snapshot/snapshot
 
-ZK9B-Create-Clone:
-  extends: .func_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/ZK9B-snapshot-clone/snapshot-clone
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/ZK9B-snapshot-clone/snapshot-clone
+# ZK9B-Create-Clone:
+#   extends: .func_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/ZK9B-snapshot-clone/snapshot-clone
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/ZK9B-snapshot-clone/snapshot-clone
 
       #5O5V-Parent-Vol-Delete:
       #  extends: .func_test_template
@@ -83,23 +83,23 @@ ZD8F-App-Scaleup:
       #    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/GV2D-Storage-volume-upgrade/storage-volume-upgrade
       #    - ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/GV2D-Storage-volume-upgrade/storage-volume-upgrade
 
-4ZWU-STS-Vol-Distribute:
-  extends: .func_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/4ZWU-STS-Volume-Distribution/volume-distribution
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/4ZWU-STS-Volume-Distribution/volume-distribution
+# 4ZWU-STS-Vol-Distribute:
+#   extends: .func_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/4ZWU-STS-Volume-Distribution/volume-distribution
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/4ZWU-STS-Volume-Distribution/volume-distribution
 
-QDLO-Data-integrity:
-  extends: .func_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/QDLO-Data-Integrity/data-integrity
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/QDLO-Data-Integrity/data-integrity
+# QDLO-Data-integrity:
+#   extends: .func_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/QDLO-Data-Integrity/data-integrity
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/QDLO-Data-Integrity/data-integrity
 
-OBS2-Memory-Usage:
-  extends: .func_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/OBS2-Memory-Consumption/memory-consumption
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/OBS2-Memory-Consumption/memory-consumption
+# OBS2-Memory-Usage:
+#   extends: .func_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/OBS2-Memory-Consumption/memory-consumption
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/3-functional/OBS2-Memory-Consumption/memory-consumption
 
       #29O5-Fill-Volume:
       #  extends: .func_test_template
@@ -120,53 +120,53 @@ OBS2-Memory-Usage:
     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/1PP5-app-kill/app-kill
     - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/1PP5-app-kill/app-kill
 
-PG1D-cStor-istgt-Kill:
-  extends: .chaos_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/PG1D-cstor-volume-istgt-kill/cstor-volume-istgt-kill
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/PG1D-cstor-volume-istgt-kill/cstor-volume-istgt-kill
+# PG1D-cStor-istgt-Kill:
+#   extends: .chaos_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/PG1D-cstor-volume-istgt-kill/cstor-volume-istgt-kill
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/PG1D-cstor-volume-istgt-kill/cstor-volume-istgt-kill
 
-KBM1-cStor-Pool-Kill:
-  extends: .chaos_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/KBM1-cstor-pool-kill/cstor-pool-kill
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/KBM1-cstor-pool-kill/cstor-pool-kill
+# KBM1-cStor-Pool-Kill:
+#   extends: .chaos_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/KBM1-cstor-pool-kill/cstor-pool-kill
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/KBM1-cstor-pool-kill/cstor-pool-kill
 
-72WM-cStor-Pool-Delete:
-  extends: .chaos_test_template
-  script:
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/72WM-cstor-pool-delete/cstor-pool-delete
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/72WM-cstor-pool-delete/cstor-pool-delete
+# 72WM-cStor-Pool-Delete:
+#   extends: .chaos_test_template
+#   script:
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/72WM-cstor-pool-delete/cstor-pool-delete
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/72WM-cstor-pool-delete/cstor-pool-delete
 
-VZPY-cStor-target-kill:
-  extends: .chaos_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/VZPY-target-kill/target-kill
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/VZPY-target-kill/target-kill
+# VZPY-cStor-target-kill:
+#   extends: .chaos_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/VZPY-target-kill/target-kill
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/VZPY-target-kill/target-kill
 
-GFL0-Target-n/w-Delay:
-  extends: .chaos_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/GFL0-target-network-delay/target-network-delay
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/GFL0-target-network-delay/target-network-delay
+# GFL0-Target-n/w-Delay:
+#   extends: .chaos_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/GFL0-target-network-delay/target-network-delay
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/GFL0-target-network-delay/target-network-delay
 
-QCA4-Target-n/w-Loss:
-  extends: .chaos_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/QCA4-target-network-loss/target-network-loss
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/QCA4-target-network-loss/target-network-loss
+# QCA4-Target-n/w-Loss:
+#   extends: .chaos_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/QCA4-target-network-loss/target-network-loss
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/QCA4-target-network-loss/target-network-loss
 
-340W-Snap-Rebuild-single-replica:
-  extends: .chaos_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/340W-snap-rebuild-single-rep/snap-rebuild-single-rep
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/340W-snap-rebuild-single-rep/snap-rebuild-single-rep
+# 340W-Snap-Rebuild-single-replica:
+#   extends: .chaos_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/340W-snap-rebuild-single-rep/snap-rebuild-single-rep
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/340W-snap-rebuild-single-rep/snap-rebuild-single-rep
 
-QKFK-Snap-Rebuild-multiple-replica:
-  extends: .chaos_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/QKFK-snap-rebuild-multiple-rep/snap-rebuild-multiple-rep
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/QKFK-snap-rebuild-multiple-rep/snap-rebuild-multiple-rep
+# QKFK-Snap-Rebuild-multiple-replica:
+#   extends: .chaos_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/QKFK-snap-rebuild-multiple-rep/snap-rebuild-multiple-rep
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/QKFK-snap-rebuild-multiple-rep/snap-rebuild-multiple-rep
 
       #WQFI-Clone-Rebuild-before-snapshot-rebuild:
       #  extends: .chaos_test_template
@@ -198,11 +198,11 @@ QKFK-Snap-Rebuild-multiple-replica:
       #    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/8PI6-pool-network-delay/pool-network-delay
       #    - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/8PI6-pool-network-delay/pool-network-delay
 
-2HXA-volume-mgmt-kill:
-  extends: .chaos_test_template
-  script: 
-    - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/2HXA-cstor-volume-mgmt-kill/cstor-volume-mgmt-kill
-    - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/2HXA-cstor-volume-mgmt-kill/cstor-volume-mgmt-kill
+# 2HXA-volume-mgmt-kill:
+#   extends: .chaos_test_template
+#   script: 
+#     - chmod 775 ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/2HXA-cstor-volume-mgmt-kill/cstor-volume-mgmt-kill
+#     - ./Openshift-EE/pipelines/OpenEBS-base/stages/4-chaos/2HXA-cstor-volume-mgmt-kill/cstor-volume-mgmt-kill
 
       #RTOH-Kubelet-Crash:
       #  extends: .chaos_test_template
